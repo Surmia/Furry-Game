@@ -34,7 +34,7 @@ function Game() {
             this.furry.y = this.furry.y + 1;
         }
         this.gameOver();
-        if (this.ongoingGame === false) {
+        if (!this.ongoingGame) {
             return;
         }
         this.showFurry();
@@ -42,7 +42,7 @@ function Game() {
     };
     this.hideVisibleFurry = function () {
         var visibleFurry = document.querySelector('.furry');
-        if (visibleFurry !== null) {
+        if (visibleFurry) {                                  //(visibleFurry !== null)
             visibleFurry.classList.remove('furry');
         }
     };
@@ -76,7 +76,7 @@ function Game() {
             clearInterval(this.idSetInterval);
             this.hideVisibleFurry();
             this.ongoingGame = false;
-            alert('Koniec gry! Punkty: ' + this.score);
+            alert('Game over! Score: ' + this.score);
         }
     }
 }

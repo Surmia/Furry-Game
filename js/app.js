@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
+var Game = require('./game.js');
 
-    var Game = require('./game.js');
+document.addEventListener('DOMContentLoaded', function () {
 
     var game = new Game();
     game.showFurry();
