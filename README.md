@@ -15,6 +15,6 @@ The aim of this game is to collect as many coins as possible. Change the directi
 * JavaScript
 * Webpack
 
-## Peview:
+## Preview:
 
 ![FurryGame](images/furrygame.jpg)
